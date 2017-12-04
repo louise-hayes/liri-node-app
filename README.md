@@ -1,5 +1,11 @@
 # liri-node-app
 
+App consists of :
+liri.js
+spotifysearch.js
+twittersearch.js
+omdbsearch.js
+
 Liri node command line application using Spotify, Twitter and Movie API requests
 LIRI is a Language Interpretation and Recognition Interface somewhat like iPhones SIRI. LIRI is a command line node app that takes in parameters and gives you back data. This App displays latest tweets, song and movie information using the spotify, omdb and twitter node npm modules.
 
