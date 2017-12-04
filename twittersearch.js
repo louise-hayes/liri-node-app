@@ -1,3 +1,5 @@
+// Incorporating an npm package for doing twitter searches.
+
 var keys = require("./keys.js");
 var Twitter = require('twitter');
 var client = new Twitter(keys);
@@ -17,7 +19,7 @@ function twitterSearch() {
       // console.log(tweets);
       if (error) throw error
   
-      // Loop through the returned tweets
+      
       console.log("");
       console.log("");
       console.log("");
@@ -25,7 +27,7 @@ function twitterSearch() {
       console.log("-------------------------------------------------------------------");
       console.log("");
       
-      
+      // Loop through the returned tweets
       for (let i = 0; i < tweets.length; i++) {
   
         // Get the tweet Id from the returned data
@@ -51,4 +53,5 @@ function twitterSearch() {
     }; // end function searchedData()
   }; // end twitterFunc()
   
+// export the module
 module.exports.getTweets = twitterSearch;
