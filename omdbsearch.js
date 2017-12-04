@@ -1,3 +1,6 @@
+
+// Incorporating an npm package for doing request omdb searches.
+
 var request = require("request");
 function omdbFunc(movie) {
   // Then run a request to the OMDB API with the movie specified
@@ -28,4 +31,5 @@ function omdbFunc(movie) {
 
 } //end omdbFunc
 
+//export the module
 module.exports.searchOmdb = omdbFunc;
