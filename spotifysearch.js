@@ -1,8 +1,12 @@
+// Incorporating an npm package for doing spotify searches.
+
 var nodeSpotifyApi = require("node-spotify-api")
 var spotify = new nodeSpotifyApi({
     id: 'e645a33e3406449aa896313dba3cbb28',
     secret: 'f4682e34f2984e8c907a29862c3799e6'
 });
+
+//craate a search spotify function to build the search query parameters
 
 function doSearch(title) {
     var options = {
@@ -21,11 +25,12 @@ function doSearch(title) {
     };
 
     spotify.search(options, function (err, data) {
+        // handle the error
         if (err) {
             return console.log('Error occurred: ' + err);
 
         }
-
+        //if no error continue to log the results
         // console.log(data);
         var trackArray = data.tracks.items;
         console.log("");
@@ -34,7 +39,7 @@ function doSearch(title) {
         console.log("********************Song Information Here:****************************")
         console.log("");
         console.log("-----------------------------------------------------");
-
+        //loop through the results of the search
         for (i = 0; i < trackArray.length; i++) {
             for (x = 0; x < trackArray[i].artists.length; x++) {
                 console.log(" Artist : " + " " + trackArray[i].artists[x].name);
@@ -55,5 +60,6 @@ function doSearch(title) {
 
 
 
+// export the module 
 
 module.exports.searchSpotify = doSearch;
