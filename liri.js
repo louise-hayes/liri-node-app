@@ -7,6 +7,7 @@ var userInput = process.argv;
 var searchItem = "";
 
 // Capture all the words in the userInput ignore first 3
+
 for (var i = 3; i < userInput.length; i++) {
 
   // Build a string with the movie or song to be searched.
@@ -18,7 +19,7 @@ for (var i = 3; i < userInput.length; i++) {
 };
 console.log(searchItem);
 
-
+// Check user input and depending on which command is entered, run the corresponding function
 
 switch (operation) {
   case "my-tweets":
