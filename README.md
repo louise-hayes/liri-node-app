@@ -33,10 +33,11 @@ node liri.js my-tweets
 
 
 ### Example Input:
+ ```
  node liri.js spotify-this-song bicycle race
+```
 
-
- RESULTING OUTPUT:
+### RESULTING OUTPUT:
  ********************Song Information Here:****************************
 
  -----------------------------------------------------
@@ -49,12 +50,12 @@ node liri.js my-tweets
 
 
 
-## Example Input:
+### Example Input:
 ```
 node liri.js movie-this the godfather
 ```
 
- RESULTING OUTPUT:
+ ### RESULTING OUTPUT:
  
  MOVIE INFO
 
